@@ -59,8 +59,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // Defines 2 users, stored in memory.
         // ** Spring BOOT >= 2.x (Spring Security 5.x)
         // Spring auto add ROLE_
-        UserDetails u1 = User.withUsername("admin").password(encrytedPassword).roles("USER").build();
-        UserDetails u2 = User.withUsername("member").password(encrytedPassword).roles("USER").build();
+        UserDetails u1 = User.withUsername("tom").password(encrytedPassword).roles("USER").build();
+        UserDetails u2 = User.withUsername("jerry").password(encrytedPassword).roles("USER").build();
  
         mngConfig.withUser(u1);
         mngConfig.withUser(u2);
